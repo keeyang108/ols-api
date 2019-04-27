@@ -1,6 +1,11 @@
 pipeline {
     agent any
     stages {
+        stage('kee's pipleline test') {
+            steps {
+                echo 'done'
+            }
+        }
         stage('Run Unit Tests') {
             agent { docker 'openjdk:11-jdk' }
             steps {
